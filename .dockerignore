@@ -1,4 +1,6 @@
 Dockerfile
+bind-compose.yml
+docker-compose.yml
 .git
 .gitignore
 README.md
