@@ -14,7 +14,7 @@ services:
   gluetun-qbittorrent-port-bind:
     image: mhabes/gluetun-qbittorrent-port-bind:latest
     container_name: gluetun-qbittorrent-port-bind
-    network_mode: "service:gluetun"
+    network_mode: "container:gluetun"
     environment:
       - GLUETUN_SERVER=localhost
       - GLUETUN_PORT=8000
