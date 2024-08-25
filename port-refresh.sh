@@ -17,7 +17,7 @@ function SetQBitPort {
 }
 
 function GetSID {
-	curl -s -S -c ${COOKIES} --data "username=$QBITTORRENT_USERNAME&password=$QBITTORRENT_PASSWORD" ${QBITTORRENT_URL}/auth/login
+	curl -s -S -c ${COOKIES} --data "username=$QBITTORRENT_USERNAME&password=$QBITTORRENT_PASSWORD" ${QBITTORRENT_URL}/auth/login > /dev/null
 	
 	if grep -q SID ${COOKIES}; then
 		echo "Successfully logged in to qBittorrent!"
