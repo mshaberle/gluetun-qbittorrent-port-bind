@@ -12,7 +12,7 @@ function GetQBitPort {
 }
 
 function SetQBitPort {
-	curl -s -S -b ${COOKIES} --data'json={"listen_port: "'"$gluetunPort"'"}' "$QBITTORRENT_URL/app/setPreferences"
+	curl -s -S -b ${COOKIES} --data 'json={"listen_port: "'"$gluetunPort"'"}' "$QBITTORRENT_URL/app/setPreferences"
 	echo "Changed qBittorrent port to ${gluetunPort}!"
 }
 
