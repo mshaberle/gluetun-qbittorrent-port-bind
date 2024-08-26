@@ -74,9 +74,6 @@ services:
     container_name: gluetun-qbittorrent-port-bind
     network_mode: "service:gluetun"
     environment:
-      - GLUETUN_SERVER=localhost
-      - GLUETUN_PORT=8000
-      - QBITTORRENT_SERVER=localhost
       - QBITTORRENT_PORT=8080
       - QBITTORRENT_USERNAME=admin
       - QBITTORRENT_PASSWORD=adminadmin
